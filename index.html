@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IC Design Workshop 2026 | IEEE CAS Guwahati Chapter</title>
+<meta name="description" content="Hands-on IC design workshop at IIT Guwahati, organised by the IEEE CAS04 Guwahati Chapter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,500..800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#1E6B4A;      /* main green */
+    --green-dark:#14513A;
+    --green-light:#8DC63F;/* accent from the CAS logo */
+    --mint:#F1F7F2;       /* pale green section background */
+    --white:#FFFFFF;
+    --ink:#1C2B24;
+    --ink-soft:#4E6159;
+    --line:#D5E5DA;
+    --radius:6px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:20px}
+  body{margin:0;background:var(--white);color:var(--ink);
+    font:400 1.0625rem/1.65 "Source Sans 3",system-ui,sans-serif}
+  h1,h2,h3{font-family:Archivo,system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+  h2{font-size:clamp(1.5rem,3vw,2rem);font-weight:750;font-stretch:90%;color:var(--green)}
+  p{margin:0 0 1em;max-width:68ch}
+  a:focus-visible{outline:3px solid var(--green-light);outline-offset:3px;border-radius:3px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+  /* logo strip */
+  .logos{background:var(--white);border-bottom:1px solid var(--line)}
+  .logos .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+  .logos img{display:block;height:64px;width:auto}
+  .logos img.ieee{height:40px}
+  @media (max-width:520px){.logos img{height:44px}.logos img.ieee{height:26px}}
+
+  /* hero */
+  .hero{background:var(--green);color:var(--white);padding:64px 0 72px}
+  .hero .chapter{color:#CFE6D7;font-weight:600;margin-bottom:14px}
+  .hero h1{font-size:clamp(2rem,5vw,3.4rem);font-weight:800;font-stretch:84%;max-width:20ch;margin-bottom:.4em}
+  .hero .sub{font-size:clamp(1.05rem,2vw,1.3rem);color:#E3F1E7;max-width:52ch}
+  .facts{display:flex;flex-wrap:wrap;gap:12px 48px;margin:28px 0 32px;padding:0}
+  .facts div{border-left:3px solid var(--green-light);padding-left:12px}
+  .facts dt{font-size:.85rem;color:#B9D9C4}
+  .facts dd{margin:0;font-weight:600}
+  .btn{display:inline-block;padding:12px 24px;border-radius:var(--radius);font-weight:600;text-decoration:none;
+    background:var(--white);color:var(--green)}
+  .btn:hover{background:var(--mint)}
+
+  /* sections */
+  section{padding:64px 0}
+  section.mint{background:var(--mint)}
+
+  /* schedule */
+  .days{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+  @media (max-width:800px){.days{grid-template-columns:1fr}}
+  .day{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--green);border-radius:var(--radius);padding:22px}
+  .day h3{font-size:1.2rem;color:var(--green);margin-bottom:14px}
+  .day dl{margin:0}
+  .day dt{font-size:.88rem;color:var(--ink-soft)}
+  .day dd{margin:0 0 14px;font-weight:600}
+  .day dd:last-child{margin-bottom:0}
+
+  /* audience */
+  .audience{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:12px}
+  .audience li{background:var(--mint);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:600;color:var(--green-dark)}
+
+  .reg .btn{background:var(--green);color:var(--white)}
+  .reg .btn:hover{background:var(--green-dark)}
+  .reg .btn.soon{background:var(--white);color:var(--green);border:2px dashed var(--green);cursor:default}
+  .day .date{font-weight:600;font-size:.95rem;color:var(--ink-soft);margin-left:6px}
+
+  footer{background:var(--green-dark);color:#CFE6D7;padding:32px 0;font-size:.95rem}
+  footer p{margin:0}
+</style>
+</head>
+<body>
+
+<header class="logos">
+  <div class="wrap">
+    <img src="images/iitg-logo.png" alt="Indian Institute of Technology Guwahati">
+    <img class="ieee" src="images/ieee-logo.jpg" alt="IEEE">
+    <img src="images/cas-logo.png" alt="IEEE Circuits and Systems Society">
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <p class="chapter">IEEE Kolkata Section Chapter, CAS04-Guwahati (CH11218)</p>
+    <h1>Integrated Circuit Design Workshops</h1>
+    <p class="sub">From Analog Circuits to Digital VLSI and FPGA Implementation</p>
+    <dl class="facts">
+      <div><dt>When</dt><dd>20–22 November 2026</dd></div>
+      <div><dt>Where</dt><dd>IIT Guwahati, Assam, India</dd></div>
+      <div><dt>Format</dt><dd>3-day hands-on workshop</dd></div>
+    </dl>
+    <a class="btn" href="#register">Register</a>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About</h2>
+    <p>A hands-on workshop on analog IC design, from MOSFET characteristics to amplifier design, using industry-standard tools. It aims to widen access to practical VLSI training for students and researchers in North-East India.</p>
+  </div>
+</section>
+
+<section id="schedule" class="mint">
+  <div class="wrap">
+    <h2>Schedule</h2>
+    <div class="days">
+      <article class="day">
+        <h3>Day 1 <span class="date">20 Nov</span></h3>
+        <dl>
+          <dt>First half</dt><dd>MOSFET characteristics</dd>
+          <dt>Second half</dt><dd>Hands-on session</dd>
+        </dl>
+      </article>
+      <article class="day">
+        <h3>Day 2 <span class="date">21 Nov</span></h3>
+        <dl>
+          <dt>First half</dt><dd>CMOS inverter design</dd>
+          <dt>Second half</dt><dd>Inverter layout</dd>
+        </dl>
+      </article>
+      <article class="day">
+        <h3>Day 3 <span class="date">22 Nov</span></h3>
+        <dl>
+          <dt>First half</dt><dd>Common source amplifier design</dd>
+          <dt>Second half</dt><dd>Differential amplifier design</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="who">
+  <div class="wrap">
+    <h2>Who should attend</h2>
+    <ul class="audience">
+      <li>B.Tech 3rd and 4th year</li>
+      <li>M.Tech 1st and 2nd year</li>
+      <li>PhD scholars</li>
+      <li>Faculty</li>
+    </ul>
+  </div>
+</section>
+
+<section id="register" class="mint reg">
+  <div class="wrap">
+    <h2>Registration</h2>
+    <p>Seats are limited.</p>
+    <!-- EDIT: when the form is ready, replace the line below with:
+         <a class="btn" href="YOUR-FORM-LINK">Register</a> -->
+    <span class="btn soon">Registration opens soon</span>
+  </div>
+</section>
+
+<section id="venue">
+  <div class="wrap">
+    <h2>Venue</h2>
+    <p>Indian Institute of Technology Guwahati, Assam, India</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>IEEE Kolkata Section Chapter, CAS04-Guwahati (CH11218)</p>
+  </div>
+</footer>
+</body>
+</html>
